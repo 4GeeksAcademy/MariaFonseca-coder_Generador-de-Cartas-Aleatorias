@@ -1,6 +1,22 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
-.tarjeta {
-  border: 2px solid red;
-  width: 300px;
-  font-size: 20px;
+body {
+  background-color: green;
+}
+#Carta {
+  background-color: white;
+  width: 200px;
+  height: 300px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+#contenedor {
+  margin-top: 20px;
+}
+.btn-generar {
+  margin-top: 20px;
+}
+#Instrucciones {
+  margin-bottom: 20px;
 }
