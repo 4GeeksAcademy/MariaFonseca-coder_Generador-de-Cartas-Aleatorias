@@ -6,6 +6,7 @@ import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
 window.onload = function() {
+  //Información a poner aleatoria
   //Evento de clic para generar un perfil aleatorio. Cuando escuche clic haga esto.
   document.querySelector(".btn-generar").addEventListener("click", () => {});
 };

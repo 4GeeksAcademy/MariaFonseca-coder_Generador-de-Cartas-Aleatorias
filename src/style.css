@@ -20,3 +20,25 @@ body {
 #Instrucciones {
   margin-bottom: 20px;
 }
+#top-card {
+  font-size: 65px;
+  width: 100%;
+  text-align: left;
+  margin-left: 10px;
+  margin-top: -10px;
+}
+
+#numero {
+  font-size: 70px;
+  font-family: cursive;
+  text-align: center;
+  margin: auto;
+}
+
+#bottom-card {
+  font-size: 65px;
+  width: 100%;
+  text-align: right;
+  margin-right: 10px;
+  margin-top: 210px;
+}
