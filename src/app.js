@@ -6,10 +6,10 @@ import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
 window.onload = function() {
-  //Información a poner aleatoria
+  // Información aleatoria
   const simbolos = ["♦", "♥", "♠", "♣"];
   const numeros = [
-    "1",
+    "A",
     "2",
     "3",
     "4",
@@ -19,9 +19,34 @@ window.onload = function() {
     "8",
     "9",
     "10",
-    "11",
-    "12",
+    "J",
+    "Q",
+    "K"
   ];
-  //Evento de clic para generar un perfil aleatorio. Cuando escuche clic haga esto.
-  document.querySelector(".btn-generar").addEventListener("click", () => {});
+
+  // Función para generar una carta aleatoria
+  function generarCarta() {
+    const simbolo = simbolos[Math.floor(Math.random() * simbolos.length)];
+    const numero = numeros[Math.floor(Math.random() * numeros.length)];
+
+    // Actualizamos el DOM
+    document.querySelector(".topCard").textContent = simbolo;
+    document.querySelector(".num").textContent = numero;
+    document.querySelector(".bottomCard").textContent = simbolo;
+
+    // Cambiamos el color según el símbolo
+    if (simbolo === "♥" || simbolo === "♦") {
+      document.querySelector("#Carta").style.color = "red";
+    } else {
+      document.querySelector("#Carta").style.color = "black";
+    }
+  }
+
+  // Generar carta al cargar la página
+  generarCarta();
+
+  // Evento de clic para generar una nueva carta
+  document.querySelector(".btn-generar").addEventListener("click", () => {
+    generarCarta();
+  });
 };
