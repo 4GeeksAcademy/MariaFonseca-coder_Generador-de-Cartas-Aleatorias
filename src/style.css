@@ -33,6 +33,9 @@ body {
   font-family: cursive;
   text-align: center;
   margin: auto;
+  display: flex;
+  justify-content: center;
+  margin-left: -35px;
 }
 
 .bottomCard {
