@@ -49,4 +49,9 @@ window.onload = function() {
   document.querySelector(".btn-generar").addEventListener("click", () => {
     generarCarta();
   });
+
+  //Coso del temporizador cada 10 segundos
+  setInterval(() => {
+    generarCarta();
+  }, 10000);
 };

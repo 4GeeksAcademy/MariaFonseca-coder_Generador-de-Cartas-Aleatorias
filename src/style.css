@@ -10,14 +10,22 @@ body {
   display: flex;
   justify-content: center;
   margin: auto;
+  border: 2px solid grey;
+  box-shadow: 0 0 20px 5px white;
 }
 #contenedor {
   margin-top: 20px;
 }
 .btn-generar {
   margin-top: 20px;
+  background-color: white;
+  border-radius: 8px;
+  font-family: cursive;
+  border: 2px solid grey;
+  box-shadow: 0 0 3px 1px white;
 }
 #Instrucciones {
+  font-family: cursive;
   margin-bottom: 20px;
 }
 .topCard {
@@ -34,15 +42,15 @@ body {
   text-align: center;
   margin: auto;
   display: flex;
-  justify-content: center;
-  margin-left: -35px;
+  justify-content: space-between;
+  margin-left: -130px;
 }
 
 .bottomCard {
   font-size: 65px;
   width: 100%;
   text-align: right;
-  margin-right: -30px;
+  margin-right: -145px;
   margin-bottom: -10px;
   transform: rotate(180deg);
 }
